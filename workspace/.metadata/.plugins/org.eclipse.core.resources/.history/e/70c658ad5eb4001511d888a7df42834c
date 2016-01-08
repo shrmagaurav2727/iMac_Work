@@ -1,0 +1,52 @@
+package Inheritance_j;
+
+public class Audi extends Cars {
+
+	public int speed =150;
+	
+	
+	public static void main (String args[]){
+		
+		Audi A1 = new Audi();
+		
+		
+		System.out.println("Fuel type of this car is "+A1.type);
+		
+		System.out.println("Color of car is "+ A1.speed);
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public void result(){
+		
+		System.out.println("The color of car is " + color);
+		
+		Seats();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

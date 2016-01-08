@@ -1,0 +1,56 @@
+package array_P;
+
+import java.util.Hashtable;
+
+public class HashTable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	    Hashtable<String, int>  Htab = new Hashtable<String, Int>();
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,20 @@
+package array_P;
+
+import java.util.ArrayList;
+
+public class arr_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+ ArrayList<String>	Arrl1 = new ArrayList<String>();
+		
+   Arrl1.add = "Row1";
+   Arrl1.add = "Row2";
+ 
+ 
+		
+		
+	}
+
+}

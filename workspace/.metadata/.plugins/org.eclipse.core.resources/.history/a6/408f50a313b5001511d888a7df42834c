@@ -1,0 +1,36 @@
+package interface_P;
+
+public class Comp implements College {
+
+
+public void subjects(){
+	
+	System.out.println("This is COmp subject");
+	
+}
+
+
+
+
+public void HOD(){
+	
+	System.out.println("This COmp HOD's");
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

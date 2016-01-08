@@ -1,0 +1,20 @@
+package Inheritance_j;
+
+public class Cars {
+
+   String Price;
+   
+   
+	public static void main (String args[])
+			{
+		
+		
+		
+		
+		
+			}
+	
+	
+	
+	
+}

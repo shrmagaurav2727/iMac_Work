@@ -1,0 +1,26 @@
+package Inheritance_j;
+
+public class Ford extends Cars {
+	
+	
+	public static void main (String args[]){
+		
+	Cars FD1 = new Ford();
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
