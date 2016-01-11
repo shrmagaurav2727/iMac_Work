@@ -1815,3 +1815,543 @@ Chain 2:
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2016-01-11 06:24:11.742
 !MESSAGE Server returned lastModified <= 0 for https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/compositeArtifacts.xml
+
+!ENTRY org.eclipse.core.resources 4 4 2016-01-11 06:25:09.020
+!MESSAGE Exception loading preferences from: /Hybrid_Framework/.settings/org.eclipse.core.resources.prefs.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.core.resources.prefs.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.CharsetManager.getPreferences(CharsetManager.java:318)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.processEntryChanges(CharsetManager.java:163)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.resourceChanged(CharsetManager.java:238)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.core.resources.prefs (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 19 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2016-01-11 06:25:09.021
+!MESSAGE File not found: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.core.resources.prefs.
+!STACK 0
+java.io.FileNotFoundException: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.core.resources.prefs (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.CharsetManager.getPreferences(CharsetManager.java:318)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.processEntryChanges(CharsetManager.java:163)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.resourceChanged(CharsetManager.java:238)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2016-01-11 06:25:09.048
+!MESSAGE Exception loading preferences from: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.core.resources.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception loading preferences from: /Hybrid_Framework/.settings/org.eclipse.core.resources.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:505)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.CharsetManager.getPreferences(CharsetManager.java:318)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.processEntryChanges(CharsetManager.java:163)
+	at org.eclipse.core.internal.resources.CharsetManager$ResourceChangeListener.resourceChanged(CharsetManager.java:238)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 4 2016-01-11 06:25:10.708
+!MESSAGE Exception loading preferences from: /Hybrid_Framework/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.jdt.core.prefs.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.resources.ProjectScope.getNode(ProjectScope.java:67)
+	at org.eclipse.core.internal.preferences.PreferencesService$5.run(PreferencesService.java:613)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferencesService.getNodes(PreferencesService.java:607)
+	at org.eclipse.core.internal.preferences.PreferencesService.getString(PreferencesService.java:676)
+	at org.eclipse.jdt.apt.core.util.AptConfig.getString(AptConfig.java:874)
+	at org.eclipse.jdt.apt.core.util.AptConfig.isEnabled(AptConfig.java:718)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.<init>(GeneratedSourceFolderManager.java:99)
+	at org.eclipse.jdt.apt.core.internal.AptProject.<init>(AptProject.java:37)
+	at org.eclipse.jdt.apt.core.internal.AptPlugin.getAptProject(AptPlugin.java:220)
+	at org.eclipse.jdt.apt.core.internal.AptPlugin.getAptProject(AptPlugin.java:231)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener$PreBuildVisitor.handleDeletion(GeneratedResourceChangeListener.java:187)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener$PreBuildVisitor.access$1(GeneratedResourceChangeListener.java:181)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:88)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:472)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:467)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:364)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:139)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.jdt.core.prefs (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 33 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2016-01-11 06:25:10.709
+!MESSAGE File not found: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.jdt.core.prefs.
+!STACK 0
+java.io.FileNotFoundException: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.jdt.core.prefs (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.resources.ProjectScope.getNode(ProjectScope.java:67)
+	at org.eclipse.core.internal.preferences.PreferencesService$5.run(PreferencesService.java:613)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferencesService.getNodes(PreferencesService.java:607)
+	at org.eclipse.core.internal.preferences.PreferencesService.getString(PreferencesService.java:676)
+	at org.eclipse.jdt.apt.core.util.AptConfig.getString(AptConfig.java:874)
+	at org.eclipse.jdt.apt.core.util.AptConfig.isEnabled(AptConfig.java:718)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.<init>(GeneratedSourceFolderManager.java:99)
+	at org.eclipse.jdt.apt.core.internal.AptProject.<init>(AptProject.java:37)
+	at org.eclipse.jdt.apt.core.internal.AptPlugin.getAptProject(AptPlugin.java:220)
+	at org.eclipse.jdt.apt.core.internal.AptPlugin.getAptProject(AptPlugin.java:231)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener$PreBuildVisitor.handleDeletion(GeneratedResourceChangeListener.java:187)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener$PreBuildVisitor.access$1(GeneratedResourceChangeListener.java:181)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:88)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:472)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:467)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:364)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:139)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2016-01-11 06:25:10.711
+!MESSAGE Exception loading preferences from: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.jdt.core.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception loading preferences from: /Hybrid_Framework/.settings/org.eclipse.jdt.core.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:505)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.resources.ProjectScope.getNode(ProjectScope.java:67)
+	at org.eclipse.core.internal.preferences.PreferencesService$5.run(PreferencesService.java:613)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferencesService.getNodes(PreferencesService.java:607)
+	at org.eclipse.core.internal.preferences.PreferencesService.getString(PreferencesService.java:676)
+	at org.eclipse.jdt.apt.core.util.AptConfig.getString(AptConfig.java:874)
+	at org.eclipse.jdt.apt.core.util.AptConfig.isEnabled(AptConfig.java:718)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedSourceFolderManager.<init>(GeneratedSourceFolderManager.java:99)
+	at org.eclipse.jdt.apt.core.internal.AptProject.<init>(AptProject.java:37)
+	at org.eclipse.jdt.apt.core.internal.AptPlugin.getAptProject(AptPlugin.java:220)
+	at org.eclipse.jdt.apt.core.internal.AptPlugin.getAptProject(AptPlugin.java:231)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener$PreBuildVisitor.handleDeletion(GeneratedResourceChangeListener.java:187)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener$PreBuildVisitor.access$1(GeneratedResourceChangeListener.java:181)
+	at org.eclipse.jdt.apt.core.internal.generatedfile.GeneratedResourceChangeListener.resourceChanged(GeneratedResourceChangeListener.java:88)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState$1.run(DeltaProcessingState.java:472)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:467)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:364)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:139)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui.ide 4 4 2016-01-11 06:25:11.324
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2016-01-11 06:25:11.325
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2016-01-11 06:25:11.325
+!MESSAGE The project description file (.project) for 'Hybrid_Framework' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-01-11 06:25:12.665
+!MESSAGE Exception loading preferences from: /Hybrid_Framework/.settings/org.eclipse.m2e.core.prefs.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.m2e.core.prefs.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:84)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:135)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.deleteResource(RefreshLocalVisitor.java:99)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeExistence(RefreshLocalVisitor.java:187)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:293)
+	at org.eclipse.core.internal.localstore.CopyVisitor.synchronize(CopyVisitor.java:169)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:186)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:109)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:310)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:566)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:382)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:95)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.m2e.core.prefs (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 45 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2016-01-11 06:25:12.666
+!MESSAGE File not found: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.m2e.core.prefs.
+!STACK 0
+java.io.FileNotFoundException: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.m2e.core.prefs (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:497)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:84)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:135)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.deleteResource(RefreshLocalVisitor.java:99)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeExistence(RefreshLocalVisitor.java:187)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:293)
+	at org.eclipse.core.internal.localstore.CopyVisitor.synchronize(CopyVisitor.java:169)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:186)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:109)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:310)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:566)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:382)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:95)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2016-01-11 06:25:12.667
+!MESSAGE Exception loading preferences from: /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/.settings/org.eclipse.m2e.core.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception loading preferences from: /Hybrid_Framework/.settings/org.eclipse.m2e.core.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:505)
+	at org.eclipse.core.internal.resources.ProjectPreferences.load(ProjectPreferences.java:482)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.getChild(EclipsePreferences.java:534)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:668)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:84)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:135)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.deleteResource(RefreshLocalVisitor.java:99)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.synchronizeExistence(RefreshLocalVisitor.java:187)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:293)
+	at org.eclipse.core.internal.localstore.CopyVisitor.synchronize(CopyVisitor.java:169)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:186)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:109)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:310)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:566)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:382)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:95)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2016-01-11 06:25:16.798 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/labuser/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data /Users/Labuser/Documents/iMac_Work/workspace -product org.eclipse.epp.package.java.product -keyring /Users/labuser/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.mylyn.git.ui 4 0 2016-01-11 06:25:28.235
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.git.ui [272]
+  Unresolved requirement: Require-Bundle: org.eclipse.egit.ui
+    -> Bundle-SymbolicName: org.eclipse.egit.ui; bundle-version="4.1.1.201511131810-r"; singleton:="true"
+       org.eclipse.egit.ui [441]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"] because it is exposed to package 'com.jcraft.jsch' from resources com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.53.v201508180515"] and com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.51.v201410302000"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.jcraft.jsch)(&(bundle-version>=0.1.37)(!(bundle-version>=0.2.0))))
+     |
+    provide: osgi.wiring.bundle: com.jcraft.jsch
+  com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.53.v201508180515"]
+
+Chain 2:
+  org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.jsch.core)(&(bundle-version>=1.1.100)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; osgi.wiring.bundle="org.eclipse.jsch.core"; bundle-version:Version="1.1.500.v20131112-1442"; singleton:="true"
+  org.eclipse.jsch.core [osgi.identity; osgi.identity="org.eclipse.jsch.core"; type="osgi.bundle"; version:Version="1.1.500.v20131112-1442"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.jcraft.jsch)(&(bundle-version>=0.1.50)(!(bundle-version>=1.0.0))))
+     |
+    provide: osgi.wiring.bundle: com.jcraft.jsch
+  com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.51.v201410302000"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.gitflow.ui 4 0 2016-01-11 06:25:28.637
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.gitflow.ui [439]
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.rebase; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.rebase; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-friends:="org.eclipse.egit.gitflow.ui"
+       org.eclipse.egit.ui [441]
+         No resolution report for the bundle.  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-friends:="org.eclipse.egit.import,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.repository.tree; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.repository.tree; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.commit; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.commit; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-friends:="org.eclipse.egit.mylyn.ui,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-friends:="org.eclipse.egit.mylyn.ui,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.history; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.history; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-internal:="true"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.branch; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.branch; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.selection; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.selection; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-internal:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"] because it is exposed to package 'com.jcraft.jsch' from resources com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.53.v201508180515"] and com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.51.v201410302000"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.jcraft.jsch)(&(bundle-version>=0.1.37)(!(bundle-version>=0.2.0))))
+     |
+    provide: osgi.wiring.bundle: com.jcraft.jsch
+  com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.53.v201508180515"]
+
+Chain 2:
+  org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.jsch.core)(&(bundle-version>=1.1.100)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; osgi.wiring.bundle="org.eclipse.jsch.core"; bundle-version:Version="1.1.500.v20131112-1442"; singleton:="true"
+  org.eclipse.jsch.core [osgi.identity; osgi.identity="org.eclipse.jsch.core"; type="osgi.bundle"; version:Version="1.1.500.v20131112-1442"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.jcraft.jsch)(&(bundle-version>=0.1.50)(!(bundle-version>=1.0.0))))
+     |
+    provide: osgi.wiring.bundle: com.jcraft.jsch
+  com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.51.v201410302000"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.mylyn.ui 4 0 2016-01-11 06:25:28.816
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.mylyn.ui [440]
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-friends:="org.eclipse.egit.mylyn.ui,org.eclipse.egit.gitflow.ui"
+       org.eclipse.egit.ui [441]
+         No resolution report for the bundle.  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.commit; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.commit; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-friends:="org.eclipse.egit.mylyn.ui,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.synchronize.model; version="[4.1.1,4.2.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.synchronize.model; bundle-version="4.1.1.201511131810-r"; bundle-symbolic-name="org.eclipse.egit.ui"; version="4.1.1"; x-friends:="org.eclipse.egit.mylyn.ui"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"] because it is exposed to package 'com.jcraft.jsch' from resources com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.53.v201508180515"] and com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.51.v201410302000"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.jcraft.jsch)(&(bundle-version>=0.1.37)(!(bundle-version>=0.2.0))))
+     |
+    provide: osgi.wiring.bundle: com.jcraft.jsch
+  com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.53.v201508180515"]
+
+Chain 2:
+  org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.jsch.core)(&(bundle-version>=1.1.100)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; osgi.wiring.bundle="org.eclipse.jsch.core"; bundle-version:Version="1.1.500.v20131112-1442"; singleton:="true"
+  org.eclipse.jsch.core [osgi.identity; osgi.identity="org.eclipse.jsch.core"; type="osgi.bundle"; version:Version="1.1.500.v20131112-1442"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.jcraft.jsch)(&(bundle-version>=0.1.50)(!(bundle-version>=1.0.0))))
+     |
+    provide: osgi.wiring.bundle: com.jcraft.jsch
+  com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.51.v201410302000"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-01-11 06:25:28.927
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.ui [441]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"] because it is exposed to package 'com.jcraft.jsch' from resources com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.53.v201508180515"] and com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.51.v201410302000"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.jcraft.jsch)(&(bundle-version>=0.1.37)(!(bundle-version>=0.2.0))))
+     |
+    provide: osgi.wiring.bundle: com.jcraft.jsch
+  com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.53.v201508180515"]
+
+Chain 2:
+  org.eclipse.egit.ui [osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.1.1.201511131810-r"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.jsch.core)(&(bundle-version>=1.1.100)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; osgi.wiring.bundle="org.eclipse.jsch.core"; bundle-version:Version="1.1.500.v20131112-1442"; singleton:="true"
+  org.eclipse.jsch.core [osgi.identity; osgi.identity="org.eclipse.jsch.core"; type="osgi.bundle"; version:Version="1.1.500.v20131112-1442"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.jcraft.jsch)(&(bundle-version>=0.1.50)(!(bundle-version>=1.0.0))))
+     |
+    provide: osgi.wiring.bundle: com.jcraft.jsch
+  com.jcraft.jsch [osgi.identity; osgi.identity="com.jcraft.jsch"; type="osgi.bundle"; version:Version="0.1.51.v201410302000"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-01-11 06:25:35.242
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2016-01-11 06:25:36.063
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-01-11 06:26:00.459
+!MESSAGE The artifact xml-apis:xml-apis:jar:2.0.2 has been relocated to xml-apis:xml-apis:jar:1.0.b2
