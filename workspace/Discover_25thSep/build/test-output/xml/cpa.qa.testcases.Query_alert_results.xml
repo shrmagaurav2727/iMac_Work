@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Query_alert"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="41.729">
+  <properties />
+            <testcase name="doFieldQual" time="41.729" classname="cpa.qa.testcases.Query_alert">
+                <failure type="org.openqa.selenium.remote.UnreachableBrowserException"
+                  message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.31.0&apos;, revision: &apos;1bd294d&apos;, time: &apos;2013-02-27 20:53:56&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:53:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+  org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
+  cpa.qa.util.Keywords.closeBrowser(Keywords.java:337)
+  cpa.qa.util.Keywords.executeTest(Keywords.java:123)
+  cpa.qa.testcases.Query_alert.doFieldQual(Query_alert.java:34)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.testng.TestNG.privateMain(TestNG.java:1338)
+  org.testng.TestNG.main(TestNG.java:1307)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+  org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+  org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+  org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+  org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+  org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+  org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+  org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+  org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133)
+  org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+  org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
+  cpa.qa.util.Keywords.closeBrowser(Keywords.java:337)
+  cpa.qa.util.Keywords.executeTest(Keywords.java:123)
+  cpa.qa.testcases.Query_alert.doFieldQual(Query_alert.java:34)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.testng.TestNG.privateMain(TestNG.java:1338)
+  org.testng.TestNG.main(TestNG.java:1307)
+Caused by: java.net.ConnectException: Connection refused: connect
+  java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+  java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+  java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+  java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+  java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+  java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+  java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+  java.net.Socket.connect(Socket.java:579)
+  org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+  org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+  org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+  org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+  org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+  org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+  org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+  org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+  org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133)
+  org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+  org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
+  cpa.qa.util.Keywords.closeBrowser(Keywords.java:337)
+  cpa.qa.util.Keywords.executeTest(Keywords.java:123)
+  cpa.qa.testcases.Query_alert.doFieldQual(Query_alert.java:34)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.testng.TestNG.privateMain(TestNG.java:1338)
+  org.testng.TestNG.main(TestNG.java:1307)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>

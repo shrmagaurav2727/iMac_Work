@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Query_editalert"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="1"
+           time="0.003">
+  <properties />
+  
+            <testcase name="doFieldQual" time="0.0" classname="cpa.qa.testcases.Query_editalert">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

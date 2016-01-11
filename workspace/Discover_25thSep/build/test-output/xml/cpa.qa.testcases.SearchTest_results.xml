@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SearchTest"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="3"
+           time="0.020">
+  <properties />
+  
+            <testcase name="doLogin" time="0.0" classname="cpa.qa.testcases.SearchTest">
+          <skipped />
+    </testcase>
+            <testcase name="doLogin" time="0.0" classname="cpa.qa.testcases.SearchTest">
+          <skipped />
+    </testcase>
+            <testcase name="doLogin" time="0.0" classname="cpa.qa.testcases.SearchTest">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

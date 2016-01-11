@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Reporter"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.172">
+  <properties />
+  
+  
+            <testcase name="doReport" time="3.172" classname="cpa.qa.testcases.Reporter" />
+      
+</testsuite>

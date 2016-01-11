@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Reporter"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="1"
+           time="0.001">
+  <properties />
+  
+            <testcase name="doReport" time="0.0" classname="cpa.qa.testcases.Reporter">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

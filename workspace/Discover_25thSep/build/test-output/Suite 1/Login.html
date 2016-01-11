@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>TestNG:  Login</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 08 18:08:04 IST 2013</td>
+</tr>
+<tr><td>Total time:</td><td>175 seconds (175010 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cpa.qa.testcases.Login.doLogin()'><b>doLogin</b><br>Test class: cpa.qa.testcases.Login<br>Parameters: {NAV_Private_Folders=NAV_Private_Folders, PWD=Pass@word17, NAV_Report_Domain_Name_Management=NAV_Report_Domain_Name_Management, NAV_Exports=NAV_Exports, ElementName0=Signin_btn, PWD3=, PWD2=faith#1234, PWD1=FAITH#12, NAV_Data_Content=NAV_Data_Content, Private Folders=Private Folders, PWD0=Jitu@123, Simple Search=Simple Search Switch to Advanced Search, NAV_Advanced_Search=NAV_Advanced_Search, SignInAutomatically_chkbox=SignInAutomatically_chkbox, Footer_lnk=Footer_lnk, UID=devtest, NAV_About_Discover=NAV_About_Discover, NAV_Terms_Of_Use=NAV_Terms_Of_Use, Privacy Policy =Privacy Policy , Exports=Exports, NAV_Search=NAV_Search, NAV_Managing_Projects=NAV_Managing_Projects, Dashboard=Dashboard, NAV_Landscape_Report=NAV_Landscape_Report, Signin_btn=Signin_btn, About CPA Global=About CPA Global, UserName=UserName, CPA Global Discover Terms Of Use=CPA Global Discover Terms Of Use, NAV_Patent_Status_alerts=NAV_Patent_Status_alerts, NAV_Getting_Started=NAV_Getting_Started, NAV_Shared_by_others=NAV_Shared_by_others, NAV_Privacy_Policy=NAV_Privacy_Policy, NAV_Result_List=NAV_Result_List, NAV_Change_Password=NAV_Change_Password, UIDText=prathore, NAV_Private_folders=NAV_Private_folders, NAV_Administration=NAV_Administration, NAV_Current_Query=NAV_Current_Query, NAV_Patent_Infringement_Search=NAV_Patent_Infringement_Search, NAV_Patent_Validity_Search=NAV_Patent_Validity_Search, Patent Validity Search=Patent Validity Search, Simple_lbl=Simple_lbl, NAV_Logged_in_as_UserName=NAV_Logged_in_as_UserName, PWDText=Faith#123, Manage Preferences=Manage Preferences, Verificationpath0=DB_Title, NAV_Logout=NAV_Logout, NAV_Patent Renewals=NAV_Patent Renewals, NAV_Manage_Preference=NAV_Manage_Preference, Terms_Condition=Terms_Condition, Runmode=Y, Current Query=Current Query, NAV_Feedback_Form=NAV_Feedback_Form, NAV_CPA_Global_Services=NAV_CPA_Global_Services, Privacy Policy=Privacy Policy, NAV_Command_Line=NAV_Command_Line, Contact CPA=Contact CPA, NAV_Saved_Searches=NAV_Saved_Searches, ElementName=NAV_Search, NAV_About_CPA_Global=NAV_About_CPA_Global, URL=https://qa.discover.cpaglobal.com, NAV_Query_alerts=NAV_Query_alerts, UID3=Rtanwar, Browser=Mozilla, UID2=, NAV_Analytics=NAV_Analytics, UID1=prathore, UID0=smoudgil, NAV_Public_folders=NAV_Public_folders, NAV_Recent_Searches=NAV_Recent_Searches, NAV_Viewing_Images=NAV_Viewing_Images, VerificationText0=My Dashboard, Exports_lbl=Exports_lbl, NAV_Patent_Portfolio_Optimisation=NAV_Patent_Portfolio_Optimisation, NAV_Contact_CPA=NAV_Contact_CPA, Advanced Search=Advanced Search Switch to Simple Search, NAV_My_Work=NAV_My_Work, NAV_Trademark_Services=NAV_Trademark_Services, NAV_Searching=NAV_Searching, Password=Password, NAV_Manage_Preferences=NAV_Manage_Preferences, NAV_Help=NAV_Help, NAV_Portfolio_Management_Services=NAV_Portfolio_Management_Services, NAV_Standard_Search=NAV_Standard_Search, State=On}</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.31.0&apos;, revision: &apos;1bd294d&apos;, time: &apos;2013-02-27 20:53:56&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
+	at cpa.qa.library.Functions.closeBrowser(Functions.java:76)
+	at cpa.qa.util.Keywords.executeTest(Keywords.java:181)
+	at cpa.qa.testcases.Login.doLogin(Login.java:31)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7060 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	... 28 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 38 more
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace941410239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace941410239'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.31.0&apos;, revision: &apos;1bd294d&apos;, time: &apos;2013-02-27 20:53:56&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:423)
+	at cpa.qa.library.Functions.closeBrowser(Functions.java:76)
+	at cpa.qa.util.Keywords.executeTest(Keywords.java:181)
+	at cpa.qa.testcases.Login.doLogin(Login.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7060 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	... 28 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 38 more
+</pre></div></td>
+<td>174</td>
+<td>cpa.qa.testcases.Login@4628a18a</td></tr>
+</table><p>
+</body>
+</html>

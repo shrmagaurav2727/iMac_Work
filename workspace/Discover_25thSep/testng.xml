@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite thread-count="2" name="Suite 1" parallel="tests" allow-return-values="false"> 
+<!-- <suite name="Suite 1" parallel="false">  -->
+
+
+
+
+
+<test name="Analytics">
+<classes>
+<class name="cpa.qa.testcases.Analytics"/>
+</classes>
+</test>
+
+<test name="ManagePreferences">
+<classes>
+<class name="cpa.qa.testcases.ManagePreferences"/>
+</classes>
+</test>
+
+</suite>

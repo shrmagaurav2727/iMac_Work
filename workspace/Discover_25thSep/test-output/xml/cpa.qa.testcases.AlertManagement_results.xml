@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AlertManagement"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="206.349">
+  <properties />
+  
+  
+            <testcase name="doAlertManagement" time="206.349" classname="cpa.qa.testcases.AlertManagement" />
+      
+</testsuite>

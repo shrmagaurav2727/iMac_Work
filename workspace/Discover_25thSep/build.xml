@@ -1,0 +1,219 @@
+<project name="testng" default="all" basedir=".">
+
+   <property file="build.properties"/>
+
+   <property name="debug" value="true"/>
+   <property name="optimize" value="false"/>
+   <property name="build.compiler" value="javac1.5" />
+   <property name="dir.src" value="src"/>
+   <property name="dir.lib" value="lib"/>
+   <property name="dir.build" value="build"/>
+	
+ 
+   <!-- dirs for test output -->
+   <property name="test.output" value="./build/test-output"/>
+   <property name="test.report" value="./build/test-report"/>
+   <property name="test.classes" value="./build/Classes"/>
+  
+
+   <target name="all" depends="prepare,compile,run"/>
+ 
+	
+ 
+   <!-- ==================================================================== -->
+   <!-- Compile                                                              -->
+   <!-- ==================================================================== -->
+   
+   
+    <presetdef name="javac">
+	     <javac includeantruntime="false" />
+		 
+	</presetdef>
+	
+   
+   
+   <path id="compile.cp">
+    <!--   <pathelement location="${jdk15.testng.jar}"/> -->
+	  <fileset dir="${dir.lib}" includes="**/*.jar"/>
+   		<dirset dir="${dir.src}" />
+   	   	<pathelement path="${dir.src}" />
+   	
+   </path>
+
+   <target name="compile"
+           description="compile the examples"
+           depends="prepare">
+      <echo message="                                 -- testng-compile-examples --"/>
+      
+
+     <javac   debug="true"
+              fork="true"
+              source="1.7"
+              classpathref="compile.cp"
+              srcdir="${dir.src}"
+              destdir="${dir.build}/classes"
+     	  
+      /> 
+   </target>
+
+   <target name="prepare">
+      <mkdir dir="${test.classes}"/>
+      <mkdir dir="${test.output}"/>
+      <mkdir dir="${test.report}"/>
+   </target>
+
+   
+   <!-- ==================================================================== -->
+   <!-- Run                                                                  -->
+   <!-- ==================================================================== -->
+
+   
+   <path id="run.cp">
+    <!--  <pathelement location="${jdk1.7.0_17.testng.jar}" /> -->
+      <path refid="compile.cp"/>
+      <pathelement location="${dir.build}/classes"/>
+   </path>
+
+   <target  name="run"
+            description="run examples with java"
+            depends="compile">
+
+      <echo message="                                  testng-run "/>
+      <java fork="yes"
+            classpathref="run.cp"
+            classname="org.testng.TestNG">
+         <arg value="-d"/>
+         <arg value="${test.output}"/>
+         <arg value="./testng.xml"/>
+         <jvmarg value="-ea"/>
+      </java>
+      <echo>Some of these tests should have failed.  Statistics are available at</echo>
+      <echo>${test.output}\index.html for a TestNG HTML report</echo>
+
+   	<taskdef resource="testngtasks" classpath="C:\Users\prathore\Workspace\Discover\lib\testng-6.8.jar" />
+ 
+   
+   	      
+	  <testng 
+	  	    outputdir="${test.output}"
+            haltonfailure="false"
+            useDefaultListeners="false"
+	  	
+	  		
+   
+			listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+      <xmlfileset dir="." includes="testng.xml"/>
+      
+	  <sysproperty key="org.uncommons.reportng.title" value="CPA Global Discover"/>
+	  <sysproperty key="org.uncommons.reportng.escape-output" value="true"/>
+      <sysproperty key="org.uncommons.reportng.stylesheet" value="${basedir}ReportNG.css"/>
+    </testng>
+	  
+  
+   </target>
+	
+     
+<!--
+      <echo>Some of these tests should have failed, see the file test.out for the details</echo>
+      <junitreport todir="${test.report}">
+         <fileset dir="${test.output}">
+            <include name="*.xml"/>
+         </fileset>
+         <report format="noframes" todir="${test.report}"/>
+      </junitreport>
+
+   
+
+	
+	
+   <target  name="run-task-noxml"
+            depends="compile"
+            description="run examples using testng task with just testclass and no xml">
+      <testng
+               fork="yes"
+               classpathref="run.cp"
+               outputdir="${test.output}"
+               testclass="example1.Test1">
+      </testng>
+      <echo>Some of these tests should have failed, see the file test.out for the details</echo>
+      <antcall target="report"/>
+   </target>
+
+   <target  name="run-task-jar"
+            depends="compile,testjar"
+            description="run examples using testng task with just testjar and no xml">
+      
+      <testng
+             
+      	
+      		   fork="yes"
+               classpathref="compile.cp"
+               outputdir="${test.output}"
+               testjar="${example.dir}/example.jar">
+      	
+      </testng>
+   	
+      <antcall target="report"/>
+      <echo>Some of these tests should have failed, see the file test.out for the details</echo>
+   </target>
+
+   <target name="testjar"
+      description="make a test jar with the property file and the classes we need in it">
+      <jar destfile="${example.dir}/example.jar">
+         <fileset dir="${example.dir}/build/classes" includes="**/*.class"/>
+         <fileset file="${example.dir}/testng.xml"/>
+      </jar>
+   </target>
+
+	
+	
+	<target name="xslt" depends="run">
+
+	     <xslt in="${basedir}/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html" processor="SaxonLiaison">
+
+	            <param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
+	            <param expression="true" name="testNgXslt.sortTestCaseLinks" />
+	            <param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+	            <param expression="true" name="testNgXslt.showRuntimeTotals" />
+
+	            <classpath refid="master-classpath">
+	            </classpath>
+	        </xslt>
+	    </target>
+	
+	<property name="LIB" value="${basedir}/lib" />
+	<property name="BIN" value="${basedir}/bin" />
+	<path id="master-classpath">
+	<pathelement location="${BIN}" />
+		 <fileset dir="${LIB}">
+		 <include name="**/*.jar" />
+		 </fileset>
+	</path>
+	
+	
+	
+	
+	
+	
+	
+   <target name="report"
+      description="generate reports using junireport">
+      <junitreport todir="${test.report}">
+         <fileset dir="${test.output}">
+            <include name="*.xml"/>
+         </fileset>
+         <report format="noframes" todir="${test.report}"/>
+      </junitreport>
+   </target>
+-->
+   <target  name="clean"
+            description="clean up example results">
+      <delete dir="${example.dir}/build/classes"/>
+      <delete dir="${test.output}"/>
+      <delete dir="${test.report}"/>
+      <antcall target="prepare"/>
+   </target>
+	
+
+
+</project>

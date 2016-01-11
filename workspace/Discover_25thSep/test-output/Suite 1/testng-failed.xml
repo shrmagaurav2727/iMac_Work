@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite 1]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Login(failed)">
+    <classes>
+      <class name="cpa.qa.testcases.Login">
+        <methods>
+          <include name="doLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- cpa.qa.testcases.Login -->
+    </classes>
+  </test> <!-- Login(failed) -->
+  <test name="Search(failed)">
+    <classes>
+      <class name="cpa.qa.testcases.PerformSearch">
+        <methods>
+          <include name="doPerformSearch" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- cpa.qa.testcases.PerformSearch -->
+    </classes>
+  </test> <!-- Search(failed) -->
+  <test name="ResultPage(failed)">
+    <classes>
+      <class name="cpa.qa.testcases.ResultPage">
+        <methods>
+          <include name="doResultPage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- cpa.qa.testcases.ResultPage -->
+    </classes>
+  </test> <!-- ResultPage(failed) -->
+  <test name="PRD(failed)">
+    <classes>
+      <class name="cpa.qa.testcases.PRD">
+        <methods>
+          <include name="doPRD" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- cpa.qa.testcases.PRD -->
+    </classes>
+  </test> <!-- PRD(failed) -->
+  <test name="ProjectFolder(failed)">
+    <classes>
+      <class name="cpa.qa.testcases.ProjectFolder">
+        <methods>
+          <include name="doProjectFolder" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- cpa.qa.testcases.ProjectFolder -->
+    </classes>
+  </test> <!-- ProjectFolder(failed) -->
+  <test name="Reporter(failed)">
+    <classes>
+      <class name="cpa.qa.testcases.Reporter">
+        <methods>
+          <include name="doReport" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- cpa.qa.testcases.Reporter -->
+    </classes>
+  </test> <!-- Reporter(failed) -->
+</suite> <!-- Failed suite [Suite 1] -->

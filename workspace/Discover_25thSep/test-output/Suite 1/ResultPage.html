@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>TestNG:  ResultPage</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ResultPage</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 05 13:43:14 IST 2013</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (26 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cpa.qa.testcases.ResultPage.doResultPage()'><b>doResultPage</b><br>Test class: cpa.qa.testcases.ResultPage<br>Parameters: {RP_NextPage=RP_NextPage, AS_Pubnumbr_Txtbox=AS_Pubnumbr_Txtbox, RP_RT_PinkColor=RP_RT_PinkColor, RP_RT_GreenColor=RP_RT_GreenColor, RP_NV_Technology=RP_NV_Technology, RP_NV_Apply_btn=RP_NV_Apply_btn, RP_SelectP2_Chkbox=RP_SelectP2_Chkbox, Runmode=Y, RP_ResultPerPage_dd=RP_ResultPerPage_dd, RP_RT_SaveKwydProjectfolder=RP_RT_SaveKwydProjectfolder, RP_Navigation_lnk=RP_Navigation_lnk, PWD=Pass@word17, RP_Classifications_IPC_lbl=RP_Classifications_IPC_lbl, RP_PopUp_Cross_btn=RP_PopUp_Cross_btn, FromDate_2001-01-01=2001-01-01, PRD_Backtoresults_lnk=PRD_Backtoresults_lnk, RP_NV_Extendedfmly=RP_NV_Extendedfmly, RP_NV_Assignees=RP_NV_Assignees, AS_SearchAgainst_dd=AS_SearchAgainst_dd, RP_FullView_lnk=RP_FullView_lnk, Value_100=100, Save to project Folder=Save to project Folder, Keyword Highlighting=Keyword Highlighting, FI (Japan)=FI (Japan), RP_ExtFamily_AppNo_lbl=RP_ExtFamily_AppNo_lbl, Dashboard=Dashboard, RP_PubDate_lbl=RP_PubDate_lbl, AS_Similarity_Txtbox=AS_Similarity_Txtbox, FilterCount_1=1, RP_RT_LoadKwydProjectfolder=RP_RT_LoadKwydProjectfolder, Image Browser=Image Browser, RP_PopUp_Closebtn=RP_PopUp_Closebtn, RP_RT_BrownColor=RP_RT_BrownColor, RP_PubDetails2=RP_PubDetails2, RP_PubDetails1=RP_PubDetails1, Text_Charger=Charger, RP_QueryOpen_lnk=RP_QueryOpen_lnk, RP_ExtFamily_PrDate_lbl=RP_ExtFamily_PrDate_lbl, Page_Abc@=Abc@, RP_PubNum1_View_lnk=RP_PubNum1_View_lnk, Test=Test, RP_NV_PublicationDate_lbl=RP_NV_PublicationDate_lbl, Similarity_Charger=Charger, RP_SimpleFamily_lnk=RP_SimpleFamily_lnk, CPC Additive=CPC Additive, Navigation_Previous=Previous, IPC=IPC, RP_Navigatortab=RP_Navigatortab, AS_CommandLine=AS_CommandLine, RecentSearch=RecentSearch, RP_Savequery_lnk=RP_Savequery_lnk, RP_Title_lbl=RP_Title_lbl, My Dashboard=My Dashboard, Switch=Switch, Option_No Family Deduplication=No Family Deduplication, RP_Resultperpage_Gobtn=RP_Resultperpage_Gobtn, RP_RT_Add_btn=RP_RT_Add_btn, RP_SimDetailsClose_lnk=RP_SimDetailsClose_lnk, RP_ResultCount=RP_ResultCount, RP_Classifications_CPCI_lbl=RP_Classifications_CPCI_lbl, RP_Preview_Addtofolder_btn=RP_Preview_Addtofolder_btn, AS_Family_dd=AS_Family_dd, RP_NV_IPC=RP_NV_IPC, NAV_Search=NAV_Search, AS_Similarity_Tab=AS_Similarity_Tab, AS_PubNumbrDateFrom_Txt=AS_PubNumbrDateFrom_Txt, RP_PubNum2_View_lnk=RP_PubNum2_View_lnk, KeywordText_Turbo Charger=Turbo Charger, Off=Off, RP_Classifications_FITerm_lbl=RP_Classifications_FITerm_lbl, Breadcrumbs=Breadcrumbs:, RP_ExtFamily_AppDate_lbl=RP_ExtFamily_AppDate_lbl, Include=Include, RP_Exporttotxtfile_lnk=RP_Exporttotxtfile_lnk, Number_2=2, RP_NV_Inventors=RP_NV_Inventors, Text_2001-01-01=2001-02-05, RP_RT_Switch=RP_RT_FirstSwitch, RP_ExtendedFamily2_lnk=RP_ExtendedFamily2_lnk, ResultTools=ResultTools, Abstract=Abstract, RP_Expandall_lnk=RP_Expandall_lnk, RP_RT_Keywordhighlight_lbl=RP_RT_Keywordhighlight_lbl, Page_2=2, Page_1=1, RP_Header_lbl=RP_Header_lbl, RP_NV_ForwardCitations_lbl=RP_NV_ForwardCitations_lbl, RP_ResultPerPage_Gobtn=RP_ResultPerPage_Gobtn, RP_RT_ColorChart=RP_RT_ColorChart, Pubnumber_US*=US*, RP_QueryClose_lnk=RP_QueryClose_lnk, Browser=Mozilla, PubNum_ US4930315A=US4930315A, Expand All=Expand All, Download=Download, RP_NV_BackwardCitations_lbl=RP_NV_BackwardCitations_lbl, RP_ExtendedFamily_lnk=RP_ExtendedFamily_lnk, RP_RT_Color=RP_RT_Color, Normalized Assignee=Normalized Assignee, Detail View=Detail View, Delete=Delete, Close=Close, Select_50=50, Option_Full Text=Full Text, RP_ExtFamily_PubDate_lbl=RP_ExtFamily_PubDate_lbl, RP_SimilarityQueryDetails=RP_SimilarityQueryDetails, RP_SimDetailsOpen_lnk=RP_SimDetailsOpen_lnk, Advanced Search=Advanced Search, SpecialCharacters_Abc@=Abc@, RP_Inventors_lbl=RP_Inventors_lbl, RP_Preview1_lnk=RP_Preview1_lnk, DB_Title=DB_Title, RP_ResultToolstab=RP_ResultToolstab, RP_Classifications_CPCA_lbl=RP_Classifications_CPCA_lbl, Create multiple status alert=Create multiple status alert, Premium=Premium, USPC=USPC, RP_NV_FirstBreadcrumbclose_btn=RP_NV_FirstBreadcrumbclose_btn, AS_KeywordTextArea=AS_KeywordTextArea, ECLA=ECLA, RP_Select_Chkbox=RP_Select_Chkbox, RP_Createqueryalert_lnk=RP_Createqueryalert_lnk, ResultList=ResultList, NAV_Advanced_Search=NAV_Advanced_Search, RP_Showvector_Crossbtn=RP_Showvector_Crossbtn, GreenColor=Green, Basic View=Basic View, RP_PubNum1_lnk=RP_PubNum1_lnk, RP_ExtFamily_Title_lbl=RP_ExtFamily_Title_lbl, RP_NV_Familycountry=RP_NV_Familycountry, Option_Turbo=Turbo, RP_ExtendedFamily1_lnk=RP_ExtendedFamily1_lnk, RP_Classifications_FI_lbl=RP_Classifications_FI_lbl, CPC Inventive=CPC Inventive, RP_Jumptopage_Gobtn=RP_Jumptopage_Gobtn, RP_RT_AllKeywords=RP_RT_AllKeywords, Value_50=50, RP_RT_GreyColor=RP_RT_GreyColor, RP_Classifications_USPC_lbl=RP_Classifications_USPC_lbl, UID=devtest, RP_Classifications_ECLA_lbl=RP_Classifications_ECLA_lbl, RP_RT_BlueColor=RP_RT_BlueColor, Select_20=20, RP_ActiveNavigationPage=RP_ActiveNavigationPage, RP_RT_KeywordhighlightDesc=RP_RT_KeywordhighlightDesc, Preference_List=List, OrangeColor=Orange, RP_NV_Simplefmly=RP_NV_Simplefmly, RP_NumberDetails=RP_NumberDetails, RP_DateDetails=RP_DateDetails, Text_US*=US2001, RP_Options_dd=RP_Options_dd, RP_Jumptopage_txt=RP_Jumptopage_txt, RP_RT_EditFirstKeyword=RP_RT_EditFirstKeyword, RP_NV_FirstBreadcrumb_lnk=RP_NV_FirstBreadcrumb_lnk, RP_BackToQuery=RP_BackToQuery, RP_Results_lbl=RP_Results_lbl, RP_NV_Doctype=RP_NV_Doctype, RP_Preview_lbl=RP_Preview_lbl, Preview=Preview, RP_RT_Keywordhighlight_Txt=RP_RT_Keywordhighlight_Txt, Number_4000=4000, RP_NV_Cancel_btn=RP_NV_Cancel_btn, RP_Collapseall_lnk=RP_Collapseall_lnk, RP_Preview_Abstract_lbl=RP_Preview_Abstract_lbl, Collapse All=Collapse All, PubNum_US7091258B2=PubNum_US7091258B2, RP_Expandedquery_Txtbox=RP_Expandedquery_Txtbox, RP_NV_Country=RP_NV_Country, Option_Rotor=rotor, Publication Number=Publication Number, Select_100=100, KeywordText_Magnetic Resonance=Magnetic Resonance, F-term (Japan)=F-term (Japan), AS_Number_Label=AS_Number_Label, NumberDetail_US*=US*, AS_PubNumbrDateTo_Txt=AS_PubNumbrDateTo_Txt, Select_10 =10, RP_NV_AssigneesNorml=RP_NV_AssigneesNorml, RP_Pubnumbr_label=RP_Pubnumbr_label, View extended family=View extended family, ToDate_2010-01-01=2010-01-01, RP_RT_YellowColor=RP_RT_YellowColor, RP_PreviousNavigation_lnk=RP_PreviousNavigation_lnk, PRDFull_Premium_lbl=PRDFull_Premium_lbl, RP_Classifications2=RP_Classifications2, RP_Classifications1=RP_Classifications1, Value_20=20, RP_RT_OrangeColor=RP_RT_OrangeColor, RP_NextNavigation_lnk=RP_NextNavigation_lnk, URL=https://qa.discover.cpaglobal.com, RP_ExtFamily_PatentNum_lbl=RP_ExtFamily_PatentNum_lbl, Exclude=Exclude, RP_NV_ApplicationDate_lbl=RP_NV_ApplicationDate_lbl, RP_ExtFamily_PrNo_lbl=RP_ExtFamily_PrNo_lbl, RP_Showvector_lnk=RP_Showvector_lnk, RP_NV_Close_btn=RP_NV_Close_btn, RP_Assignees_lbl=RP_Assignees_lbl, RP_Preview_Closebtn=RP_Preview_Closebtn, Compare Patents=Compare Patents, RP_NV_PriorityDate_lbl=RP_NV_PriorityDate_lbl, RP_NV_USPC=RP_NV_USPC, Result=Result, RP_NV_ECLA=RP_NV_ECLA, Value_10=10, Text_Turbo Charger=Turbo Charger, Chkbox_StatusOn=On, View analytics=View analytics, Back to results=Back to results, Search_btn=Search_btn, Page_4000=4000, Numbers=Numbers, allErrors=allErrors, Rp_NV_BreadCrumbs_lbl=Rp_NV_BreadCrumbs_lbl, Navigation_Next=Next, Option_recovery=recovery, RP_KeywordQueryDetails=RP_KeywordQueryDetails, RP_NV_keywords=RP_NV_keywords, Email=Email}</td>
+<td><div><pre>org.testng.SkipException: Skipping the entire test as Runmode is N
+	at cpa.qa.testcases.ResultPage.doResultPage(ResultPage.java:18)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089532007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2089532007'><pre>org.testng.SkipException: Skipping the entire test as Runmode is N
+	at cpa.qa.testcases.ResultPage.doResultPage(ResultPage.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>cpa.qa.testcases.ResultPage@63a80928</td></tr>
+</table><p>
+</body>
+</html>
