@@ -1,0 +1,49 @@
+package encapsulation;
+
+public class encapTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	encapCod ep1 = new encapCod();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

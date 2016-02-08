@@ -1,0 +1,57 @@
+package encapsulation;
+
+public class encapCod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+ private String sname;
+ private String ssection;
+ private int srollno;
+ 
+ 
+ 
+ public String S1 (String sname ){
+	  return sname;
+	 
+	 
+ }
+ 
+ 
+ 
+ public String S2 (String ssecString){
+	 
+	 return ssection;
+ }
+  
+
+public int S3  (int srollno){
+	
+return srollno;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
