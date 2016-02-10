@@ -1281,3 +1281,8 @@
 2016-01-11 06:26:01,339 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/src/test/resources
 2016-01-11 06:26:01,341 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-01-11 06:26:01,342 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/src/test/resources
+2016-02-10 06:23:25,897 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact xml-apis:xml-apis:jar:2.0.2 has been relocated to xml-apis:xml-apis:jar:1.0.b2
+2016-02-10 06:23:27,277 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-10 06:23:27,278 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/src/test/resources
+2016-02-10 06:23:27,281 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-10 06:23:27,281 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Labuser/Documents/iMac_Work/workspace/Hybrid_Framework/src/test/resources
