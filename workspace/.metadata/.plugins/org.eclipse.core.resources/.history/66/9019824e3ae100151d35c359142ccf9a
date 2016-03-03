@@ -1,0 +1,25 @@
+package polyMorphsm;
+
+public class exeRuntimePolymorph extends compileTime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+ compileTime c1 = new compileTime();
+	 
+	 c1.call1(230, 230);
+		
+		
+		
+		
+	RuntimPolymorph c2= new  RuntimPolymorph();	
+	c2.call1(2220,3330);
+		
+		
+		
+		
+		
+		
+	}
+
+}

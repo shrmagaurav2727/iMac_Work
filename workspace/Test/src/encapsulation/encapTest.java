@@ -11,7 +11,7 @@ public class encapTest {
 	ep1.S3(27);
 	
 	
-	
+	System.out.println("ROll No is:" + ep1.G1()+ "   "+ ",Name is:" + ep1.G2()+"   "+ ", Section is:" + ep1.G3());
 	
 	
 	

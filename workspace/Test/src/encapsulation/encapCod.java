@@ -12,31 +12,52 @@ public class encapCod {
  private int srollno;
  
  
- 
- public String S1 (String sname ){
-	  return sname;
+ //Setter method
+ public void S1 (String s_name ){
+	  sname= s_name;
 	 
 	 
  }
  
  
- 
- public String S2 (String ssecString){
+ //seter method
+ public void S2 (String ssecString){
 	 
-	 return ssection;
+	 ssection = ssecString;
  }
   
 
-public int S3  (int srollno){
+ //setter method
+public void S3  (int s_rollno){
 	
-return srollno;
+ srollno =  s_rollno;  
+	
+}
+
+
+public String  G1(){
+	
+	return sname;
+	
 	
 	
 }
 
 
+public String G2()  {
+	
+return ssection;
+	
+}
 
 
+
+public int G3(){
+	
+	
+	return srollno;
+	
+}
 
 
 
