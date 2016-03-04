@@ -6,4 +6,7 @@
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="encapsulation.encapTest"/>
+<fullyQualifiedTypeName name="polyMorphsm.compileTime"/>
+<fullyQualifiedTypeName name="polyMorphsm.RuntimPolymorph"/>
 </qualifiedTypeNameHistroy>
