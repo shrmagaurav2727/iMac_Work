@@ -1588,3 +1588,5 @@
 2016-03-03 05:34:15,780 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Labuser/Documents/iMac_Work/workspace/maven-template/src/main/resources
 2016-03-03 05:34:15,783 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-03-03 05:34:15,785 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2016-03-04 02:55:43,869 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lazerycode.selenium:maven-template:1.0-SNAPSHOT @ /Users/Labuser/Documents/iMac_Work/workspace/maven-template/pom.xml.
+2016-03-04 02:55:47,444 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lazerycode.selenium:maven-template:1.0-SNAPSHOT @ /Users/Labuser/Documents/iMac_Work/workspace/maven-template/pom.xml.
