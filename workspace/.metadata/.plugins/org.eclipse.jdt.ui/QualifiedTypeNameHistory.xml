@@ -9,4 +9,8 @@
 <fullyQualifiedTypeName name="encapsulation.encapTest"/>
 <fullyQualifiedTypeName name="polyMorphsm.compileTime"/>
 <fullyQualifiedTypeName name="polyMorphsm.RuntimPolymorph"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
 </qualifiedTypeNameHistroy>
